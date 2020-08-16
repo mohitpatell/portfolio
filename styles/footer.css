@@ -1,0 +1,124 @@
+.footer {
+  width: 100%;
+  background: #1c1d25;
+  padding: 8% 0; }
+
+.footer,
+.footer a {
+  color: #f3f3f3; }
+
+.footer-logo {
+  display: block;
+  position: relative;
+  width: 70px;
+  margin: 0 auto 12px; }
+
+.footer-logo img,
+.footer-logo svg {
+  width: 70px;
+  height: 70px;
+  opacity: 0.8; }
+
+.footer-logo span {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px; }
+
+.footer-logo .footer-logo-top-label {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  font-size: 0.875em;
+  font-family: League Spartan, Helvetica, Arial, sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateX(40px);
+  transform: translateX(40px);
+  transition: all 0.3s ease; }
+
+.footer-logo .footer-logo-top-icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+  top: 4px; }
+
+.footer-logo .footer-logo-top-icon svg {
+  width: 20px;
+  height: 20px; }
+
+.footer-logo:hover .footer-logo-top-label {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateX(60px);
+  transform: translateX(60px); }
+
+.footer-links {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center; }
+
+.footer-links li {
+  display: inline-block;
+  margin-right: 60px; }
+
+.footer-links li:last-child {
+  margin-right: 0; }
+
+.footer-links a {
+  display: block;
+  padding: 15px 0;
+  font-family: League Spartan, Helvetica, Arial, sans-serif;
+  position: relative;
+  color: #f3f3f3;
+  transition: color 0.3s ease; }
+
+.footer-links a:before {
+  background-color: #235aa6;
+  transition: all 0.25s cubic-bezier(0.694, 0.048, 0.335, 1) 0.15s; }
+
+.footer-links a:after,
+.footer-links a:before {
+  content: "";
+  position: absolute;
+  bottom: 16px;
+  right: 0;
+  left: auto;
+  width: 0;
+  height: 3px;
+  z-index: 2; }
+
+.footer-links a:after {
+  background-color: #f25757;
+  transition: all 0.25s cubic-bezier(0.694, 0.048, 0.335, 1); }
+
+.footer-links a:hover {
+  color: #f3f3f3;
+  text-decoration: none; }
+
+@media only screen and (min-width: 64em) {
+  .footer-links a:hover:after,
+  .footer-links a:hover:before {
+    width: 100%;
+    left: 0; } }
+
+.footer-copy {
+  width: 100%;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 0.75em; }
+
+.footer-copy a:hover {
+  text-decoration: none; }
+
+@media only screen and (max-width: 31.875em) {
+  .footer-links li {
+    float: left;
+    clear: none;
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0; } }

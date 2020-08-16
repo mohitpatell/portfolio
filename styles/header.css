@@ -1,0 +1,112 @@
+.nav-logo {
+  float: left;
+  padding: 10px 0;
+  transition: opacity 0.35s ease 0.65s; }
+
+.nav-logo span {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px; }
+
+.nav-logo svg {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  top: 2px;
+  opacity: 1;
+  transition: opacity 0.25s ease; }
+
+.nav-logo:focus svg,
+.nav-logo:hover svg {
+  opacity: 0.83; }
+
+#change-theme {
+  position: relative;
+  top: 4px; }
+
+.nav-links {
+  float: right;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  top: 20px;
+  transition: opacity 0.35s ease 0.75s; }
+
+.nav-links li {
+  display: inline-block;
+  margin-left: 40px; }
+
+.nav-links a {
+  display: block;
+  padding: 10px 0;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  color: #b0b2c3;
+  transition: color 0.35s ease; }
+
+.nav-links a svg {
+  width: 40px;
+  height: 20px; }
+
+.nav-links a svg path {
+  fill: #b0b2c3;
+  transition: all 0.25s; }
+
+.nav-links a .nav-link-icon {
+  position: absolute;
+  top: 7px;
+  left: -52px;
+  display: inline-block;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  width: 60px;
+  height: 26px;
+  transition: -webkit-transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1);
+  transition: transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1);
+  transition: transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1), -webkit-transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1); }
+
+.nav-links a .nav-link-icon svg {
+  width: 60px;
+  height: 26px; }
+
+.nav-links a .nav-link-icon svg path {
+  fill: #b0b2c3;
+  transition: all 0.25s; }
+
+.nav-links a:before {
+  background-color: #235aa6;
+  transition: all 0.25s cubic-bezier(0.694, 0.048, 0.335, 1) 0.15s; }
+
+.nav-links a:after,
+.nav-links a:before {
+  content: "";
+  position: absolute;
+  bottom: 11px;
+  right: 0;
+  left: auto;
+  width: 0;
+  height: 3px;
+  z-index: 2; }
+
+.nav-links a:after {
+  background-color: #f25757;
+  transition: all 0.25s cubic-bezier(0.694, 0.048, 0.335, 1); }
+
+.nav-links a:hover {
+  color: #fff;
+  text-decoration: none; }
+
+@media only screen and (min-width: 64em) {
+  .nav-links a:hover:after,
+  .nav-links a:hover:before {
+    width: 100%;
+    left: 0; } }
+
+.nav-links a:hover .nav-link-icon {
+  -webkit-transform: translateX(-4px);
+  transform: translateX(-4px); }
+
+.nav-links a:hover .nav-link-icon svg path {
+  fill: #fff; }

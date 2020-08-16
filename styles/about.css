@@ -1,0 +1,67 @@
+.back-pattern {
+  background-image: url("https://milanmaheshwari.design/images/me2rec.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; }
+
+main {
+  background: #ebebeb !important; }
+
+.nav-links a {
+  color: #4c4f65 !important; }
+
+.nav-logo svg path {
+  fill: #4c4f65 !important; }
+
+.about-me-text-content {
+  flex: 1;
+  padding: 5%; }
+
+.about-me-content-title {
+  font-weight: 400; }
+
+.about-me-content-separator {
+  width: 10%;
+  height: 4px;
+  background-color: #235aa6;
+  margin: 5px 0; }
+
+.about-me-img-content {
+  display: flex;
+  flex: 1; }
+
+.about-me-content-desc {
+  padding: 0 15% 0 0; }
+
+.about-me-img-content img {
+  margin: auto; }
+
+.me1 {
+  width: 50%;
+  border-radius: 50%; }
+
+.me2 {
+  width: 71%; }
+
+.about-me-inner-container {
+  display: flex; }
+
+@media screen and (max-width: 40em) {
+  .about-me-inner-container {
+    flex-direction: column; }
+  .about-me-text-content {
+    order: 2; }
+  .about-me-img-content {
+    order: 1; }
+  .about-me-content-desc {
+    padding: 0; }
+  .about-me-content-desc p {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: left;
+    line-height: 28px;
+    color: #333138;
+    opacity: 1;
+    width: 100%; } }
