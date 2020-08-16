@@ -27,6 +27,7 @@
   margin: 0rem;
   transition: all 0.2s ease-out 0s; }
 
+/* Work Card */
 .z1 {
   z-index: 1; }
 
@@ -112,7 +113,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  box-shadow: 20px 20px 60px #c9c9d7,  -20px -20px 60px #ffffff; }
+  box-shadow: 20px 20px 60px #c9c9d7, -20px -20px 60px #ffffff; }
   .image-card::after {
     position: absolute;
     content: "";
