@@ -340,6 +340,83 @@ h6 {
   padding-top: 0;
   padding-bottom: 0; }
 
+.h1,
+h1 {
+  margin-bottom: .1875566421em;
+  font-size: 1.999396em;
+  line-height: 1.1253398526;
+  color: #1c1d25; }
+
+@media only screen and (min-width: 43.75em) {
+  .h1,
+  h1 {
+    margin-bottom: .132642604em;
+    font-size: 2.827145944em;
+    line-height: 1.0611408323;
+    color: #1c1d25; } }
+
+@media only screen and (min-width: 56.25em) {
+  .h1,
+  h1 {
+    margin-bottom: .0938066507em;
+    font-size: 3.9975843648em;
+    line-height: .9380665066;
+    color: #1c1d25; } }
+
+.h2,
+h2 {
+  margin-bottom: .2652050919em;
+  font-size: 1.414em;
+  line-height: 1.3260254597;
+  color: #1c1d25; }
+
+@media only screen and (min-width: 43.75em) {
+  .h2,
+  h2 {
+    margin-bottom: .1875566421em;
+    font-size: 1.999396em;
+    line-height: 1.1253398526;
+    color: #1c1d25; } }
+
+@media only screen and (min-width: 56.25em) {
+  .h2,
+  h2 {
+    margin-bottom: .132642604em;
+    font-size: 2.827145944em;
+    line-height: 1.0611408323;
+    color: #1c1d25; } }
+
+.h3,
+h3 {
+  margin-bottom: .2652050919em;
+  font-size: 1.414em;
+  line-height: 1.3260254597;
+  color: #1c1d25; }
+
+@media only screen and (min-width: 56.25em) {
+  .h3,
+  h3 {
+    margin-bottom: .1875566421em;
+    font-size: 1.999396em;
+    line-height: 1.1253398526;
+    color: #1c1d25; } }
+
+.h4,
+h4 {
+  margin-bottom: .2652050919em;
+  font-size: 1.414em;
+  line-height: 1.3260254597;
+  color: #1c1d25; }
+
+.h5,
+.h6,
+h5,
+h6 {
+  margin-bottom: .375em;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #1c1d25; }
+
 @media only screen and (min-width: 43.75em) {
   p {
     margin-top: 0;
