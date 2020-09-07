@@ -4,7 +4,7 @@ h1 {
   font-size: 1.999396em;
   line-height: 1.1253398526; }
 
-@media only screen and (min-width: 43.75em) {
+@media only screen and (min-width: 48em) {
   .h1,
   h1 {
     margin-bottom: .132642604em;
@@ -24,7 +24,7 @@ h2 {
   font-size: 1.414em;
   line-height: 1.3260254597; }
 
-@media only screen and (min-width: 43.75em) {
+@media only screen and (min-width: 48em) {
   .h2,
   h2 {
     margin-bottom: .1875566421em;
@@ -93,6 +93,9 @@ h6 {
   background: #089ECA;
   margin: 0rem;
   transition: all 0.2s ease-out 0s; }
+
+.read:hover {
+  color: white; }
 
 /* Work Card */
 .z1 {
@@ -395,7 +398,7 @@ h6 {
     display: none;
     visibility: hidden; } }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 48em) {
   .outer {
     display: flex;
     flex-direction: column;
