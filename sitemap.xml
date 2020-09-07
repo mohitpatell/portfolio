@@ -3,45 +3,45 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://mohitpatell.github.io/portfolio/about/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/contact/</loc>
+    <loc>https://mohitpatell.github.io/portfolio/contact/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/foreignadmits/</loc>
+    <loc>https://mohitpatell.github.io/portfolio/foreignadmits/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/onewater/</loc>
+    <loc>https://mohitpatell.github.io/portfolio/onewater/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/paperlouge/</loc>
+    <loc>https://mohitpatell.github.io/portfolio/paperlouge/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/vaartaalaap/</loc>
+    <loc>https://mohitpatell.github.io/portfolio/vaartaalaap/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://mohitpatell.github.io/portfolio/categories/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://mohitpatell.github.io/portfolio/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://mohitpatell.github.io/portfolio/tags/</loc>
   </url>
   
 </urlset>
