@@ -131,11 +131,11 @@
         </div>
         <ul class="nav-links">
             <li itemprop="name">
-                <a href="https://mohitpatell.github.io/portfolio/">Work</a>
+                <a id="work-desktop" href="#work">Work</a>
             </li>
             <li><a href="https://mohitpatell.github.io/portfolio/about">About</a></li>
             <li itemprop="name">
-                <a href="#" data-scroll itemprop="url" class="no-smoothState ">Resume</a>
+                <a href="https://drive.google.com/file/d/1pM77edN-6ronCCJCgEeYhMThVC7dIayR/view?usp=sharing" target="_blank" class="no-smoothState ">Resume</a>
             </li>
             
             <li><a href="https://mohitpatell.github.io/portfolio/contact">Contact</a></li>
@@ -156,11 +156,11 @@
     <ul class="mobile-nav-links">
         
         <li>
-            <a href="https://mohitpatell.github.io/portfolio/" class="no-smoothState">Work</a>
+            <a id="work-mobile" href="#work" class="no-smoothState">Work</a>
         </li>
         <li><a href="https://mohitpatell.github.io/portfolio/about" class="no-smoothState">About</a></li>
         <li>
-            <a target="_blank" href="https://mohitpatell.github.io/portfolio/Resume.pdf">Resume</a>
+            <a href="https://drive.google.com/file/d/1pM77edN-6ronCCJCgEeYhMThVC7dIayR/view?usp=sharing" target="_blank">Resume</a>
         </li>
         <li><a href="https://mohitpatell.github.io/portfolio/contact" class="no-smoothState">Contact</a></li>
     </ul>
@@ -480,13 +480,23 @@
   </script>
   <script src="https://mohitpatell.github.io/portfolio/animate.js"></script>
   <script>
-    console.log(window.location.pathname+window.location.search)
     let el = document.getElementById("change-theme");
-    console.log(el, '##')
-      if (window.location.pathname+window.location.search == '/about/' || window.location.pathname+window.location.search == '/contact/') {
+      if (window.location.pathname+window.location.search == '/portfolio/about/' || window.location.pathname+window.location.search == '/contact/') {
         el.style.display = "none";
       } else {
         el.style.display = "block";
+      }
+      console.log(window.location.pathname+window.location.search)
+      if(window.location.pathname+window.location.search != '/portfolio/') {
+        console.log('---hit1')
+        document.getElementById("work-desktop").href=`/portfolio/#work`; 
+        document.getElementById("work-mobile").href=`/portfolio/#work`; 
+        document.getElementById("change-theme").style.display=block; 
+      }else {
+        console.log('---hit2')
+        document.getElementById("change-theme").style.display=none; 
+        document.getElementById("work-desktop").href=`#work`; 
+        document.getElementById("work-mobile").href=`#work`; 
       }
   </script>
 </body>

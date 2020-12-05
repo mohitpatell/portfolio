@@ -296,6 +296,7 @@ html {
 
 html {
   position: relative;
+    scroll-behavior: smooth;
   font-size: 100%; }
 
 body {
