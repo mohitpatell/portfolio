@@ -6234,15 +6234,15 @@ var Util = (function (t) {
           );
         });
       },
-      u = function () {
-        var e = t(document).find("title").text(),
-          i = "Be sure to checkout this before closing the internet :P";
-        document.addEventListener("visibilitychange", function () {
-          document.hidden
-            ? t(document).find("title").text(i)
-            : t(document).find("title").text(e);
-        });
-      },
+      // u = function () {
+      //   var e = t(document).find("title").text(),
+      //     i = "Be sure to checkout this before closing the internet :P";
+      //   document.addEventListener("visibilitychange", function () {
+      //     document.hidden
+      //       ? t(document).find("title").text(i)
+      //       : t(document).find("title").text(e);
+      //   });
+      // },
       h = function (t) {
         ga("set", "page", t), ga("send", "pageview");
       },
@@ -6301,6 +6301,7 @@ var Util = (function (t) {
           e.preventDefault();
           var i = t(this).attr("href"),
             n = t(i).offset().top;
+            console.log(n);
           TweenLite.to(window, 1.2, {
             scrollTo: { y: n },
             ease: Power4.easeInOut,

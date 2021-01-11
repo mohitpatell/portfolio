@@ -55,7 +55,7 @@
     }
     
     .avatar {
-        width: 10%;
+        width: 10% !important;
         margin-bottom: 2%;
     }
     
@@ -76,7 +76,10 @@
         color: rgb(29, 24, 24) !important;
         font-weight: 400;
     }
-    
+    label{
+            display: block !important;
+            text-align: left;
+        }
     .main-navigation.view-in-scroll {
         background: transparent !important;
     }
@@ -85,7 +88,7 @@
             padding: 20% 0 0 0;
         }
         .avatar {
-            width: 28%;
+            width: 28% !important;
             margin-bottom: 2%;
         }
         .title {
@@ -95,7 +98,9 @@
             padding: 10% 15px;
             margin: 0;
         }
+        
     }
+   
 </style>
 
 <link rel="stylesheet" href="https://mohitpatell.github.io/portfolio/styles/loader.css" integrity="" media="screen">
@@ -262,36 +267,38 @@
         </section>
 
         <section class="form-area">
-            <form action="">
-                <div class="row">
-                    <div class="col-md-3"></div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            <div class="container">
+                <form action="">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name">Name</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="message">Message</label>
+                                        <textarea type="text" class="form-control" id="message" placeholder="Enter your message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+    
                     </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                        </div>
-                    </div>
-                    <div class="col-md-3"></div>
-
-                </div>
-                <div class="row">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea type="text" class="form-control" id="message" placeholder="Enter your message"></textarea>
-                        </div>
-                    </div>
-                    <div class="col-md-4"></div>
-                </div>
-            </form>
-            <button class="btn btn-primary">Send</button>
+                   
+                </form>
+                <button class="btn btn-primary">Send</button>
+            </div>
+           
         </section>
     </div>
 </main>
@@ -349,7 +356,7 @@
         <script>
           document.write(new Date().getFullYear() + " ");
         </script>
-        Mohit Patel - VAT 02847960305 -
+        Mohit Patel -
         <a href="mailto:mohitpatel9753@gmail.com" class="no-smoothState"
           >Contact</a
         >
@@ -366,20 +373,22 @@
   <script src="https://mohitpatell.github.io/portfolio/animate.js"></script>
   <script>
     let el = document.getElementById("change-theme");
-      if (window.location.pathname+window.location.search == '/portfolio/about/' || window.location.pathname+window.location.search == '/contact/') {
-        el.style.display = "none";
-      } else {
-        el.style.display = "block";
-      }
+      
+      
+      
+      
+      
+      console.log(document.getElementById("change-theme"))
       console.log(window.location.pathname+window.location.search)
+      console.log(document.getElementById("change-theme"))
       if(window.location.pathname+window.location.search != '/portfolio/') {
         console.log('---hit1')
         document.getElementById("work-desktop").href=`/portfolio/#work`; 
         document.getElementById("work-mobile").href=`/portfolio/#work`; 
-        document.getElementById("change-theme").style.display=block; 
+        
       }else {
         console.log('---hit2')
-        document.getElementById("change-theme").style.display=none; 
+        
         document.getElementById("work-desktop").href=`#work`; 
         document.getElementById("work-mobile").href=`#work`; 
       }

@@ -6295,6 +6295,7 @@
             e.preventDefault();
             var i = t(this).attr("href"),
               n = t(i).offset().top;
+              console.log(n);
             TweenLite.to(window, 1.2, {
               scrollTo: { y: n },
               ease: Power4.easeInOut,

@@ -464,7 +464,7 @@
         <script>
           document.write(new Date().getFullYear() + " ");
         </script>
-        Mohit Patel - VAT 02847960305 -
+        Mohit Patel -
         <a href="mailto:mohitpatel9753@gmail.com" class="no-smoothState"
           >Contact</a
         >
@@ -481,20 +481,22 @@
   <script src="https://mohitpatell.github.io/portfolio/animate.js"></script>
   <script>
     let el = document.getElementById("change-theme");
-      if (window.location.pathname+window.location.search == '/portfolio/about/' || window.location.pathname+window.location.search == '/contact/') {
-        el.style.display = "none";
-      } else {
-        el.style.display = "block";
-      }
+      
+      
+      
+      
+      
+      console.log(document.getElementById("change-theme"))
       console.log(window.location.pathname+window.location.search)
+      console.log(document.getElementById("change-theme"))
       if(window.location.pathname+window.location.search != '/portfolio/') {
         console.log('---hit1')
         document.getElementById("work-desktop").href=`/portfolio/#work`; 
         document.getElementById("work-mobile").href=`/portfolio/#work`; 
-        document.getElementById("change-theme").style.display=block; 
+        
       }else {
         console.log('---hit2')
-        document.getElementById("change-theme").style.display=none; 
+        
         document.getElementById("work-desktop").href=`#work`; 
         document.getElementById("work-mobile").href=`#work`; 
       }

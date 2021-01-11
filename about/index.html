@@ -46,11 +46,37 @@
     .main-navigation.view-in-scroll {
         background: transparent !important;
     }
-    @media only screen and (max-width: 59.375em) {
-        .single-work-section {
-            padding: 25% 0 0 0;
-        }
+    .me2{
+        position: relative;
+        z-index: 2;
+        margin: auto;
     }
+    .me1{
+        margin: 2rem auto;
+    }
+    .me2 img{
+        z-index: 2;
+        position: relative;
+    }
+    .me-abs{
+        position: absolute;
+        margin: auto;
+        top: 50%;
+        left: 50%;
+        width: 110%;
+        height: 110%;
+        transform: translate(-50%,-50%);
+        background-image: url("/portfolio/me2rec.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 0;
+    }
+    @media only screen and (max-width: 59.375em) {
+         
+    }
+
+     
 
 </style>
 
@@ -208,17 +234,19 @@
 </nav>
 <main class="single-work">
     <section class="single-work-section">
-        <div class="section-mask"></div>
-        <div class="content">
-            <div class="about-me-inner-container">
-                <div class="about-me-img-content single-work-first-anim-blocks">
-                    <img src="https://mohitpatell.github.io/portfolio/me1.jpg" class="me1" alt="Cerasa User Interface Example" />
+        
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-6">
+                    <div class="about-me-img-content single-work-first-anim-blocks">
+                        <img src="https://mohitpatell.github.io/portfolio/me1.jpg" class="me1" alt="Cerasa User Interface Example" />
+                    </div>
                 </div>
-                <div class="about-me-text-content is-left single-work-first-anim-blocks">
-                    <h3 class="about-me-content-title">about me</h3>
-                    <div class="about-me-content-separator"></div>
+                <div class="col-md-6">
                     <div class="about-me-content-desc">
-                        <p>
+                        <h3 class="about-me-content-title text-center text-sm-left mb-4">about me</h3>
+                    <div class="about-me-content-separator"></div>
+                        <p class="text-center text-sm-left">
                             Hello again! My name is Mohit Patel. I am currently a Computer Science final year student and a self-taught full-stack developer. I draw pleasure from solving people’s problems and passionate about building excellent Websites that improves the lives of
                             those around me. I love spending time on fixing little details and optimizing application (or web app). Also, I like working in a team, you’ll learn faster and much more.
                         </p>
@@ -226,10 +254,10 @@
                     </div>
                 </div>
             </div>
-            <div class="about-me-inner-container">
-                <div class="about-me-text-content is-left single-work-first-anim-blocks">
+            <div class="row mt-5">
+                <div class="col-md-7">
                     <div class="about-me-content-desc">
-                        <p>
+                        <p class="text-center text-sm-left">
                             I have joined a private college because of a decent rank in the entrance exam. After a while, I started losing interest in what was taught is classes and it wasn’t my cup of tea. Meanwhile, I started competitive programming, web development, exploring
                             technologies, etc. In the second year, I joined ZeitLabs as a Frontend Developer Intern which helped me build my basics. The projects I did here plus the concept, helped my problem-solving skills, and also got a taste of how
                             things work in the real world.
@@ -237,12 +265,18 @@
 
                     </div>
                 </div>
-                <div class="about-me-img-content back-pattern single-work-first-anim-blocks">
-                    <img src="https://mohitpatell.github.io/portfolio/me2.jpg" class="me2" alt="Cerasa User Interface Example" />
+                <div class="col-md-5">
+                    <div class="me2">
+                        <div class="me-abs"></div>
+                        <img src="https://mohitpatell.github.io/portfolio/me2.jpg" alt="Mohit Patel" />
+                    </div>
+                   
                 </div>
-
             </div>
             
+            
+            
+            </div>
     </section>
 </main>
 
@@ -299,7 +333,7 @@
         <script>
           document.write(new Date().getFullYear() + " ");
         </script>
-        Mohit Patel - VAT 02847960305 -
+        Mohit Patel -
         <a href="mailto:mohitpatel9753@gmail.com" class="no-smoothState"
           >Contact</a
         >
@@ -316,20 +350,22 @@
   <script src="https://mohitpatell.github.io/portfolio/animate.js"></script>
   <script>
     let el = document.getElementById("change-theme");
-      if (window.location.pathname+window.location.search == '/portfolio/about/' || window.location.pathname+window.location.search == '/contact/') {
-        el.style.display = "none";
-      } else {
-        el.style.display = "block";
-      }
+      
+      
+      
+      
+      
+      console.log(document.getElementById("change-theme"))
       console.log(window.location.pathname+window.location.search)
+      console.log(document.getElementById("change-theme"))
       if(window.location.pathname+window.location.search != '/portfolio/') {
         console.log('---hit1')
         document.getElementById("work-desktop").href=`/portfolio/#work`; 
         document.getElementById("work-mobile").href=`/portfolio/#work`; 
-        document.getElementById("change-theme").style.display=block; 
+        
       }else {
         console.log('---hit2')
-        document.getElementById("change-theme").style.display=none; 
+        
         document.getElementById("work-desktop").href=`#work`; 
         document.getElementById("work-mobile").href=`#work`; 
       }
